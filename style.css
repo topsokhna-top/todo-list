@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif; /* la police des ecriture*/
+    background-color: #f4f4f9; /* la couleur de fond de la page*/
+    margin: 0; /*Supprime la marge exterieur*/
+    padding: 20px; /* ajoute une marge intérieur*/
+    color: #333333; /* la couleur des ecritures*/
+}
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+header h1 {
+    color: #2c3e50;
+}
+#formulaire {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#addTache {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+#formulaire button {
+    padding: 12px 18px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+#formulaire button:hover {
+    background-color: #34495e;
+}
+#conteneurTaches {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tache {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tache p {
+    flex: 1;
+}
+.tache button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.bouton-supprimer {
+    background-color: #e74c3c;
+    color: white;
+}
+.bouton-terminer {
+    background-color: #27ae60;
+    color: white;
+}
+.bouton-supprimer:hover {
+    background-color: #c0392b;
+}
+.bouton-terminer:hover {
+    background-color: #219150;
+}
+.filtres {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.filtres button {
+    padding: 8px 14px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border: 1px solid #d5dbdb;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.filtres button:hover {
+    background-color: #dfe6e9;
+}

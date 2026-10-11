@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mon gestionnaire de tâche</h1>
+        <p>Gérez mieux votre temps avec notre application</p>
+        <p id="compteurTaches"></p>
+    </header>
+    <main>
+        <!-- Cette section nous permet d'ajouter une tache en remplissant le nom de la tache -->
+        <form id="formulaire">
+            <input type="text" name="addTache" id="addTache" placeholder="Ajoutez une tache">
+            <button type="submit">Ajouter</button>
+        </form>
+        <!-- c'est dans cette section que vont s'afficher les taches ajoutées, et à chaque fois qu'une tache est ajoutée il y'aura une bouton terminé et une bouton supprimer à coté -->
+        <section>
+            <h2>Mes Tâches</h2>
+            <div class="filtres">
+                <button id="filtreToutes">Toutes</button>
+                <button id="filtreEnCours">En cours</button>
+                <button id="filtreTerminees">Terminées</button>
+            </div>
+            <div id="conteneurTaches"></div>
+        </section>
+    </main>
+</body>
+</html>
